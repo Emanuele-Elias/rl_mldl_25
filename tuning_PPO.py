@@ -8,6 +8,8 @@ from stable_baselines3.common.utils import get_linear_fn
 from stable_baselines3.common.evaluation import evaluate_policy
 from stable_baselines3.common.vec_env import DummyVecEnv, VecNormalize
 
+from env.custom_hopper import *
+
 # 1) Define a single global seed
 SEED = 42
 
