@@ -1,3 +1,4 @@
+numpy>=1.21.6
 gym==0.21.0
 stable-baselines3[extra]==1.7.0
 cython<3
