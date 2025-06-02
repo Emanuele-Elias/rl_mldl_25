@@ -27,8 +27,8 @@ lr_schedule = get_linear_fn(start=1e-4, end=0.0, end_fraction=1.0)
 param_grid = {
     "n_steps":       [2048, 4096, 8192],
     "batch_size":    [32, 64, 128],
-    "gae_lambda":    [0.9, 0.95], #0.8, 0.9, 0.95
-    "gamma":         [0.95], #0.95, 0.99
+    "gae_lambda":    [0.8, 0.9, 0.95], #0.8, 0.9, 0.95
+    "gamma":         [0.95, 0.99], #0.95, 0.99
     "n_epochs":      [10, 15, 20], #10, 15, 20
     "clip_range":    [0.1, 0.2], #0.1, 0.2
     "ent_coef":      [0.0, 0.005],
