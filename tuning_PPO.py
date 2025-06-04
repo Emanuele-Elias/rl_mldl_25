@@ -25,12 +25,12 @@ lr_schedule = get_linear_fn(start=1e-4, end=0.0, end_fraction=1.0)
 
 # 4) Hyperparameter grid
 param_grid = {
-    "n_steps":       [2048, 4096],
+    "n_steps":       [4096], #2048, 4096
     "batch_size":    [32, 128],
-    "gae_lambda":    [0.8, 0.9], #0.8, 0.9, 0.95
-    "gamma":         [0.95], #0.95, 0.99
-    "n_epochs":      [10, 20], #10, 15, 20
-    "clip_range":    [0.2], #0.1, 0.2
+    "gae_lambda":    [0.8, 0.9], 
+    "gamma":         [0.95], 
+    "n_epochs":      [10, 20], 
+    "clip_range":    [0.2], 
     "ent_coef":      [0.0, 0.005],
     "vf_coef":       [0.5, 1.0],
     "max_grad_norm": [0.5, 1.0]
