@@ -26,15 +26,16 @@ lr_schedule = get_linear_fn(start=1e-4, end=0.0, end_fraction=1.0)
 # 4) Hyperparameter grid
 param_grid = {
     "n_steps":       [8192], #2048, 4096, 8192
-    "batch_size":    [32, 128],
-    "gae_lambda":    [0.8, 0.9], 
-    "gamma":         [0.95], 
-    "n_epochs":      [10, 20], 
+    "batch_size":    [64], #32, 128
+    "gae_lambda":    [0.9], #0.8, 0.9
+    "gamma":         [0.99],  #0.95
+    "n_epochs":      [15], #10,20
     "clip_range":    [0.2], 
-    "ent_coef":      [0.0, 0.005],
-    "vf_coef":       [0.5, 1.0],
-    "max_grad_norm": [0.5, 1.0]
+    "ent_coef":      [0.005], #0.0, 0.005
+    "vf_coef":       [0.5], #0.5, 1.0
+    "max_grad_norm": [0.5] #0.5, 1.0
 }
+
 
 # 5) Utility to create a seeded, normalized VecEnv
 def make_env(env_id: str, seed: int):
