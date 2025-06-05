@@ -116,7 +116,7 @@ def main():
         'CustomHopper-source-v0', 
         './simopt_hopper_logs_source',  # Log directory for training
         './simopt_hopper_final_source', # Model path for saving the final model
-        total_timesteps=2_000_000,
+        total_timesteps=100_000,
         phi=phi_optimal
     )
 
