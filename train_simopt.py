@@ -39,8 +39,8 @@ torch.manual_seed(SEED)
 if torch.cuda.is_available():
     torch.cuda.manual_seed_all(SEED)
 
-tol_var = 1e-3  # Variance threshold for convergence    
-BO_calls = 10  # Number of Bayesian Optimization calls
+tol_var = 1e-4  # Variance threshold for convergence    
+BO_calls = 30  # Number of Bayesian Optimization calls
 
 # Main SimOpt loop
 def main(): 
@@ -116,7 +116,7 @@ def main():
         'CustomHopper-source-v0', 
         './simopt_hopper_logs_source',  # Log directory for training
         './simopt_hopper_final_source', # Model path for saving the final model
-        total_timesteps=100_000,
+        total_timesteps=2_000_000,
         phi=phi_optimal
     )
 
