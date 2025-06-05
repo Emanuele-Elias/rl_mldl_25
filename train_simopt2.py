@@ -49,7 +49,7 @@ HYBRID_BETA = 0.1      # weight of return in hybrid objective
 
 # --------------- Utility: make vecnormalize -------------
 
-def make_vec_env(env_id: str, phi: dict | None = None):
+def make_vec_env(env_id, phi=None):
     """Create a monitored & normalised env with optional domain randomisation wrapper."""
     base_env = gym.make(env_id)
     if phi is not None:
