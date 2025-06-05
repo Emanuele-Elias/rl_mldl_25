@@ -29,7 +29,7 @@ from skopt.plots import plot_convergence
 import seaborn as sns
 import random
 
-from utils_SimOpt import train_and_save, BO_obj
+from utils_simopt import train_and_save, BO_obj
 
 # Fix seeds for reproducibility
 SEED = 42
