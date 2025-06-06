@@ -39,10 +39,11 @@ if torch.cuda.is_available():
 # leg:   μ=3.000, σ²=0.0288
 # foot:  μ=4.878, σ²=0.0288
 PHI_FINAL = {
-    "thigh": [3.628, 0.0288],
-    "leg":   [3.000, 0.0288],
-    "foot":  [4.878, 0.0288],
+    "thigh": [3.619, 0.1715],
+    "leg":   [2.806, 0.1715],
+    "foot":  [4.914, 0.1715],
 }
+
 
 # Se vuoi salvare i modelli su disco:
 GAUSS_LOGDIR = Path("simopt_hopper_logs_source") / "gauss_model"
@@ -245,7 +246,7 @@ if __name__ == "__main__":
     print("\n*** TEST: PPO (Gaussian DR) → Target ***")
     evaluate_on_target(model_gauss, target_gauss_vec, args.episodes, args.render)
 
-    # 2) Alleno PPO con Uniform‐DR (±30 %) per 100 000 passi
+    # 2) Alleno PPO con Uniform‐DR (±30 %) 
     print("\n— Training PPO (Uniform DR ±30%) —")
     uniform_vec_train = make_uniform_train_vec("CustomHopper-source-v0")
     model_uniform = PPO(
