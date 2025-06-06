@@ -43,7 +43,7 @@ NORMALIZE_PATH = Path("simopt_hopper_logs_source") / "vecnormalize.pkl"
 
 # --------------------------------------------------------------------
 
-def make_env(env_id: str, phi: dict | None = None):
+def make_env(env_id: str, phi: dict):
     """Crea env (con Monitor) e wrapper Gaussian se phi indicato."""
     from utils_simopt import HopperMassRandomGaussianWrapper
 
