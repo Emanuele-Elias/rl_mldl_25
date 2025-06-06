@@ -1,0 +1,754 @@
+--- SimOpt step 0 ---
+Iteration No: 1 started. Evaluating function at random point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 1 ended. Evaluation done at random point.
+Time taken: 165.6249
+Function value obtained: 4853.4396
+Current minimum: 4853.4396
+Iteration No: 2 started. Evaluating function at random point.
+Iteration No: 2 ended. Evaluation done at random point.
+Time taken: 162.8405
+Function value obtained: 5568.9215
+Current minimum: 4853.4396
+Iteration No: 3 started. Evaluating function at random point.
+Iteration No: 3 ended. Evaluation done at random point.
+Time taken: 165.4367
+Function value obtained: 30641.6791
+Current minimum: 4853.4396
+Iteration No: 4 started. Evaluating function at random point.
+Iteration No: 4 ended. Evaluation done at random point.
+Time taken: 161.3298
+Function value obtained: 3125.5912
+Current minimum: 3125.5912
+Iteration No: 5 started. Evaluating function at random point.
+Iteration No: 5 ended. Evaluation done at random point.
+Time taken: 164.7793
+Function value obtained: 33485.4557
+Current minimum: 3125.5912
+Iteration No: 6 started. Evaluating function at random point.
+Iteration No: 6 ended. Evaluation done at random point.
+Time taken: 165.7344
+Function value obtained: 36054.9380
+Current minimum: 3125.5912
+Iteration No: 7 started. Evaluating function at random point.
+Iteration No: 7 ended. Evaluation done at random point.
+Time taken: 162.0033
+Function value obtained: 2528.1655
+Current minimum: 2528.1655
+Iteration No: 8 started. Evaluating function at random point.
+Iteration No: 8 ended. Evaluation done at random point.
+Time taken: 165.2709
+Function value obtained: 29607.3868
+Current minimum: 2528.1655
+Iteration No: 9 started. Evaluating function at random point.
+Iteration No: 9 ended. Evaluation done at random point.
+Time taken: 163.4368
+Function value obtained: 32275.1123
+Current minimum: 2528.1655
+Iteration No: 10 started. Evaluating function at random point.
+Iteration No: 10 ended. Evaluation done at random point.
+Time taken: 165.0570
+Function value obtained: 36028.1028
+Current minimum: 2528.1655
+Iteration No: 11 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 11 ended. Search finished for the next optimal point.
+Time taken: 164.0456
+Function value obtained: 35045.7430
+Current minimum: 2528.1655
+Iteration No: 12 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 12 ended. Search finished for the next optimal point.
+Time taken: 165.6779
+Function value obtained: 35033.7490
+Current minimum: 2528.1655
+Iteration No: 13 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 13 ended. Search finished for the next optimal point.
+Time taken: 164.9624
+Function value obtained: 35460.4257
+Current minimum: 2528.1655
+Iteration No: 14 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 14 ended. Search finished for the next optimal point.
+Time taken: 165.1512
+Function value obtained: 41021.9991
+Current minimum: 2528.1655
+Iteration No: 15 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 15 ended. Search finished for the next optimal point.
+Time taken: 163.2656
+Function value obtained: 6709.5556
+Current minimum: 2528.1655
+Best μ: {'thigh': 2.9731156700828314, 'leg': 2.7638853705167783, 'foot': 4.889102043430511} | Obj: 2528.1654590186477
+→ thigh: μ=3.641, σ²=0.3500
+→ leg: μ=2.729, σ²=0.3500
+→ foot: μ=5.029, σ²=0.3500
+
+--- SimOpt step 1 ---
+Iteration No: 1 started. Evaluating function at random point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 1 ended. Evaluation done at random point.
+Time taken: 165.4971
+Function value obtained: 36134.0704
+Current minimum: 36134.0704
+Iteration No: 2 started. Evaluating function at random point.
+Iteration No: 2 ended. Evaluation done at random point.
+Time taken: 166.8561
+Function value obtained: 9041.3313
+Current minimum: 9041.3313
+Iteration No: 3 started. Evaluating function at random point.
+Iteration No: 3 ended. Evaluation done at random point.
+Time taken: 168.2868
+Function value obtained: 28292.0084
+Current minimum: 9041.3313
+Iteration No: 4 started. Evaluating function at random point.
+Iteration No: 4 ended. Evaluation done at random point.
+Time taken: 167.0938
+Function value obtained: 26498.8290
+Current minimum: 9041.3313
+Iteration No: 5 started. Evaluating function at random point.
+Iteration No: 5 ended. Evaluation done at random point.
+Time taken: 168.4041
+Function value obtained: 29822.8995
+Current minimum: 9041.3313
+Iteration No: 6 started. Evaluating function at random point.
+Iteration No: 6 ended. Evaluation done at random point.
+Time taken: 165.6436
+Function value obtained: 24464.0376
+Current minimum: 9041.3313
+Iteration No: 7 started. Evaluating function at random point.
+Iteration No: 7 ended. Evaluation done at random point.
+Time taken: 166.9464
+Function value obtained: 20982.3542
+Current minimum: 9041.3313
+Iteration No: 8 started. Evaluating function at random point.
+Iteration No: 8 ended. Evaluation done at random point.
+Time taken: 167.9344
+Function value obtained: 36285.4545
+Current minimum: 9041.3313
+Iteration No: 9 started. Evaluating function at random point.
+Iteration No: 9 ended. Evaluation done at random point.
+Time taken: 172.1645
+Function value obtained: 17828.2003
+Current minimum: 9041.3313
+Iteration No: 10 started. Evaluating function at random point.
+Iteration No: 10 ended. Evaluation done at random point.
+Time taken: 167.0166
+Function value obtained: 14763.7760
+Current minimum: 9041.3313
+Iteration No: 11 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 11 ended. Search finished for the next optimal point.
+Time taken: 168.2746
+Function value obtained: 34187.8286
+Current minimum: 9041.3313
+Iteration No: 12 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 12 ended. Search finished for the next optimal point.
+Time taken: 168.4848
+Function value obtained: 12360.1956
+Current minimum: 9041.3313
+Iteration No: 13 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 13 ended. Search finished for the next optimal point.
+Time taken: 166.7509
+Function value obtained: 2460.4919
+Current minimum: 2460.4919
+Iteration No: 14 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 14 ended. Search finished for the next optimal point.
+Time taken: 168.1209
+Function value obtained: 44767.2916
+Current minimum: 2460.4919
+Iteration No: 15 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 15 ended. Search finished for the next optimal point.
+Time taken: 167.6908
+Function value obtained: 37171.3162
+Current minimum: 2460.4919
+Best μ: {'thigh': 3.2529939429009813, 'leg': 3.064990657525253, 'foot': 5.08336361510305} | Obj: 2460.4919478070733
+→ thigh: μ=3.524, σ²=0.2450
+→ leg: μ=2.830, σ²=0.2450
+→ foot: μ=5.046, σ²=0.2450
+
+--- SimOpt step 2 ---
+Iteration No: 1 started. Evaluating function at random point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 1 ended. Evaluation done at random point.
+Time taken: 169.1678
+Function value obtained: 12373.7569
+Current minimum: 12373.7569
+Iteration No: 2 started. Evaluating function at random point.
+Iteration No: 2 ended. Evaluation done at random point.
+Time taken: 167.5033
+Function value obtained: 17278.0916
+Current minimum: 12373.7569
+Iteration No: 3 started. Evaluating function at random point.
+Iteration No: 3 ended. Evaluation done at random point.
+Time taken: 169.6868
+Function value obtained: 14538.2884
+Current minimum: 12373.7569
+Iteration No: 4 started. Evaluating function at random point.
+Iteration No: 4 ended. Evaluation done at random point.
+Time taken: 167.0340
+Function value obtained: 37896.6847
+Current minimum: 12373.7569
+Iteration No: 5 started. Evaluating function at random point.
+Iteration No: 5 ended. Evaluation done at random point.
+Time taken: 168.5972
+Function value obtained: 35958.2451
+Current minimum: 12373.7569
+Iteration No: 6 started. Evaluating function at random point.
+Iteration No: 6 ended. Evaluation done at random point.
+Time taken: 168.4609
+Function value obtained: 30907.1570
+Current minimum: 12373.7569
+Iteration No: 7 started. Evaluating function at random point.
+Iteration No: 7 ended. Evaluation done at random point.
+Time taken: 170.6977
+Function value obtained: 22383.3453
+Current minimum: 12373.7569
+Iteration No: 8 started. Evaluating function at random point.
+Iteration No: 8 ended. Evaluation done at random point.
+Time taken: 168.6435
+Function value obtained: 13375.2004
+Current minimum: 12373.7569
+Iteration No: 9 started. Evaluating function at random point.
+Iteration No: 9 ended. Evaluation done at random point.
+Time taken: 167.8650
+Function value obtained: 13155.8136
+Current minimum: 12373.7569
+Iteration No: 10 started. Evaluating function at random point.
+Iteration No: 10 ended. Evaluation done at random point.
+Time taken: 166.9522
+Function value obtained: 3248.1909
+Current minimum: 3248.1909
+Iteration No: 11 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 11 ended. Search finished for the next optimal point.
+Time taken: 168.2239
+Function value obtained: 18617.1107
+Current minimum: 3248.1909
+Iteration No: 12 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 12 ended. Search finished for the next optimal point.
+Time taken: 170.9441
+Function value obtained: 3167.0954
+Current minimum: 3167.0954
+Iteration No: 13 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 13 ended. Search finished for the next optimal point.
+Time taken: 167.7204
+Function value obtained: 2457.5147
+Current minimum: 2457.5147
+Iteration No: 14 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 14 ended. Search finished for the next optimal point.
+Time taken: 168.2553
+Function value obtained: 35978.0482
+Current minimum: 2457.5147
+Iteration No: 15 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 15 ended. Search finished for the next optimal point.
+Time taken: 167.7940
+Function value obtained: 6838.6727
+Current minimum: 2457.5147
+Best μ: {'thigh': 3.838389335521518, 'leg': 2.749166550642735, 'foot': 4.608013715337221} | Obj: 2457.5146879792214
+→ thigh: μ=3.619, σ²=0.1715
+→ leg: μ=2.806, σ²=0.1715
+→ foot: μ=4.914, σ²=0.1715
+
+--- SimOpt step 3 ---
+Iteration No: 1 started. Evaluating function at random point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 1 ended. Evaluation done at random point.
+Time taken: 168.4056
+Function value obtained: 34727.4512
+Current minimum: 34727.4512
+Iteration No: 2 started. Evaluating function at random point.
+Iteration No: 2 ended. Evaluation done at random point.
+Time taken: 167.4234
+Function value obtained: 4456.8896
+Current minimum: 4456.8896
+Iteration No: 3 started. Evaluating function at random point.
+Iteration No: 3 ended. Evaluation done at random point.
+Time taken: 167.3858
+Function value obtained: 8531.8435
+Current minimum: 4456.8896
+Iteration No: 4 started. Evaluating function at random point.
+Iteration No: 4 ended. Evaluation done at random point.
+Time taken: 168.9499
+Function value obtained: 33401.4674
+Current minimum: 4456.8896
+Iteration No: 5 started. Evaluating function at random point.
+Iteration No: 5 ended. Evaluation done at random point.
+Time taken: 170.0224
+Function value obtained: 13296.0153
+Current minimum: 4456.8896
+Iteration No: 6 started. Evaluating function at random point.
+Iteration No: 6 ended. Evaluation done at random point.
+Time taken: 167.8717
+Function value obtained: 31606.3646
+Current minimum: 4456.8896
+Iteration No: 7 started. Evaluating function at random point.
+Iteration No: 7 ended. Evaluation done at random point.
+Time taken: 166.6565
+Function value obtained: 29132.6299
+Current minimum: 4456.8896
+Iteration No: 8 started. Evaluating function at random point.
+Iteration No: 8 ended. Evaluation done at random point.
+Time taken: 167.0255
+Function value obtained: 27852.2556
+Current minimum: 4456.8896
+Iteration No: 9 started. Evaluating function at random point.
+Iteration No: 9 ended. Evaluation done at random point.
+Time taken: 165.5513
+Function value obtained: 19615.0276
+Current minimum: 4456.8896
+Iteration No: 10 started. Evaluating function at random point.
+Iteration No: 10 ended. Evaluation done at random point.
+Time taken: 167.6203
+Function value obtained: 11287.8521
+Current minimum: 4456.8896
+Iteration No: 11 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 11 ended. Search finished for the next optimal point.
+Time taken: 166.9142
+Function value obtained: 35376.9534
+Current minimum: 4456.8896
+Iteration No: 12 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 12 ended. Search finished for the next optimal point.
+Time taken: 167.8682
+Function value obtained: 9866.7072
+Current minimum: 4456.8896
+Iteration No: 13 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 13 ended. Search finished for the next optimal point.
+Time taken: 166.7226
+Function value obtained: 8343.9634
+Current minimum: 4456.8896
+Iteration No: 14 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 14 ended. Search finished for the next optimal point.
+Time taken: 165.3141
+Function value obtained: 5665.8085
+Current minimum: 4456.8896
+Iteration No: 15 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 15 ended. Search finished for the next optimal point.
+Time taken: 164.3805
+Function value obtained: 15106.3219
+Current minimum: 4456.8896
+Best μ: {'thigh': 3.9323265512633867, 'leg': 3.090149844977546, 'foot': 4.9011453885077625} | Obj: 4456.889583289623
+→ thigh: μ=3.713, σ²=0.1200
+→ leg: μ=2.891, σ²=0.1200
+→ foot: μ=4.910, σ²=0.1200
+
+--- SimOpt step 4 ---
+Iteration No: 1 started. Evaluating function at random point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 1 ended. Evaluation done at random point.
+Time taken: 163.6143
+Function value obtained: 12997.2918
+Current minimum: 12997.2918
+Iteration No: 2 started. Evaluating function at random point.
+Iteration No: 2 ended. Evaluation done at random point.
+Time taken: 165.7626
+Function value obtained: 4709.1564
+Current minimum: 4709.1564
+Iteration No: 3 started. Evaluating function at random point.
+Iteration No: 3 ended. Evaluation done at random point.
+Time taken: 165.0150
+Function value obtained: 14150.6291
+Current minimum: 4709.1564
+Iteration No: 4 started. Evaluating function at random point.
+Iteration No: 4 ended. Evaluation done at random point.
+Time taken: 164.8846
+Function value obtained: 38434.4023
+Current minimum: 4709.1564
+Iteration No: 5 started. Evaluating function at random point.
+Iteration No: 5 ended. Evaluation done at random point.
+Time taken: 163.2134
+Function value obtained: 9743.1910
+Current minimum: 4709.1564
+Iteration No: 6 started. Evaluating function at random point.
+Iteration No: 6 ended. Evaluation done at random point.
+Time taken: 172.3584
+Function value obtained: 7448.7862
+Current minimum: 4709.1564
+Iteration No: 7 started. Evaluating function at random point.
+Iteration No: 7 ended. Evaluation done at random point.
+Time taken: 171.4452
+Function value obtained: 32512.7828
+Current minimum: 4709.1564
+Iteration No: 8 started. Evaluating function at random point.
+Iteration No: 8 ended. Evaluation done at random point.
+Time taken: 170.1277
+Function value obtained: 26788.7872
+Current minimum: 4709.1564
+Iteration No: 9 started. Evaluating function at random point.
+Iteration No: 9 ended. Evaluation done at random point.
+Time taken: 168.7323
+Function value obtained: 33289.8347
+Current minimum: 4709.1564
+Iteration No: 10 started. Evaluating function at random point.
+Iteration No: 10 ended. Evaluation done at random point.
+Time taken: 168.5576
+Function value obtained: 30111.3862
+Current minimum: 4709.1564
+Iteration No: 11 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 11 ended. Search finished for the next optimal point.
+Time taken: 166.9396
+Function value obtained: 30007.2038
+Current minimum: 4709.1564
+Iteration No: 12 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 12 ended. Search finished for the next optimal point.
+Time taken: 167.3029
+Function value obtained: 5314.0250
+Current minimum: 4709.1564
+Iteration No: 13 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 13 ended. Search finished for the next optimal point.
+Time taken: 167.8346
+Function value obtained: 34734.7882
+Current minimum: 4709.1564
+Iteration No: 14 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 14 ended. Search finished for the next optimal point.
+Time taken: 169.9819
+Function value obtained: 30462.2618
+Current minimum: 4709.1564
+Iteration No: 15 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 15 ended. Search finished for the next optimal point.
+Time taken: 168.3250
+Function value obtained: 33262.0670
+Current minimum: 4709.1564
+Best μ: {'thigh': 3.571063263630513, 'leg': 3.1261868191484914, 'foot': 5.015405395789988} | Obj: 4709.156364170313
+→ thigh: μ=3.670, σ²=0.0840
+→ leg: μ=2.962, σ²=0.0840
+→ foot: μ=4.942, σ²=0.0840
+
+--- SimOpt step 5 ---
+Iteration No: 1 started. Evaluating function at random point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 1 ended. Evaluation done at random point.
+Time taken: 168.6919
+Function value obtained: 33397.3945
+Current minimum: 33397.3945
+Iteration No: 2 started. Evaluating function at random point.
+Iteration No: 2 ended. Evaluation done at random point.
+Time taken: 167.6487
+Function value obtained: 30907.7920
+Current minimum: 30907.7920
+Iteration No: 3 started. Evaluating function at random point.
+Iteration No: 3 ended. Evaluation done at random point.
+Time taken: 167.1991
+Function value obtained: 31910.1555
+Current minimum: 30907.7920
+Iteration No: 4 started. Evaluating function at random point.
+Iteration No: 4 ended. Evaluation done at random point.
+Time taken: 166.6307
+Function value obtained: 28121.8492
+Current minimum: 28121.8492
+Iteration No: 5 started. Evaluating function at random point.
+Iteration No: 5 ended. Evaluation done at random point.
+Time taken: 164.6273
+Function value obtained: 9084.9975
+Current minimum: 9084.9975
+Iteration No: 6 started. Evaluating function at random point.
+Iteration No: 6 ended. Evaluation done at random point.
+Time taken: 165.6518
+Function value obtained: 12116.2136
+Current minimum: 9084.9975
+Iteration No: 7 started. Evaluating function at random point.
+Iteration No: 7 ended. Evaluation done at random point.
+Time taken: 167.3140
+Function value obtained: 13799.6502
+Current minimum: 9084.9975
+Iteration No: 8 started. Evaluating function at random point.
+Iteration No: 8 ended. Evaluation done at random point.
+Time taken: 165.8206
+Function value obtained: 15338.0781
+Current minimum: 9084.9975
+Iteration No: 9 started. Evaluating function at random point.
+Iteration No: 9 ended. Evaluation done at random point.
+Time taken: 167.1789
+Function value obtained: 34174.7489
+Current minimum: 9084.9975
+Iteration No: 10 started. Evaluating function at random point.
+Iteration No: 10 ended. Evaluation done at random point.
+Time taken: 167.0298
+Function value obtained: 10965.7030
+Current minimum: 9084.9975
+Iteration No: 11 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 11 ended. Search finished for the next optimal point.
+Time taken: 165.9221
+Function value obtained: 13765.2944
+Current minimum: 9084.9975
+Iteration No: 12 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 12 ended. Search finished for the next optimal point.
+Time taken: 163.3012
+Function value obtained: 11255.3700
+Current minimum: 9084.9975
+Iteration No: 13 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 13 ended. Search finished for the next optimal point.
+Time taken: 165.2236
+Function value obtained: 15683.1238
+Current minimum: 9084.9975
+Iteration No: 14 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 14 ended. Search finished for the next optimal point.
+Time taken: 165.3819
+Function value obtained: 30136.9241
+Current minimum: 9084.9975
+Iteration No: 15 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 15 ended. Search finished for the next optimal point.
+Time taken: 165.3785
+Function value obtained: 23238.8908
+Current minimum: 9084.9975
+Best μ: {'thigh': 3.621317502578523, 'leg': 3.0498577166731033, 'foot': 4.791132405615084} | Obj: 9084.99754485488
+→ thigh: μ=3.656, σ²=0.0588
+→ leg: μ=2.988, σ²=0.0588
+→ foot: μ=4.897, σ²=0.0588
+
+--- SimOpt step 6 ---
+Iteration No: 1 started. Evaluating function at random point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 1 ended. Evaluation done at random point.
+Time taken: 162.9612
+Function value obtained: 14297.2837
+Current minimum: 14297.2837
+Iteration No: 2 started. Evaluating function at random point.
+Iteration No: 2 ended. Evaluation done at random point.
+Time taken: 165.0697
+Function value obtained: 35326.8183
+Current minimum: 14297.2837
+Iteration No: 3 started. Evaluating function at random point.
+Iteration No: 3 ended. Evaluation done at random point.
+Time taken: 165.0201
+Function value obtained: 33864.5423
+Current minimum: 14297.2837
+Iteration No: 4 started. Evaluating function at random point.
+Iteration No: 4 ended. Evaluation done at random point.
+Time taken: 164.2516
+Function value obtained: 39506.2596
+Current minimum: 14297.2837
+Iteration No: 5 started. Evaluating function at random point.
+Iteration No: 5 ended. Evaluation done at random point.
+Time taken: 162.8276
+Function value obtained: 8993.5445
+Current minimum: 8993.5445
+Iteration No: 6 started. Evaluating function at random point.
+Iteration No: 6 ended. Evaluation done at random point.
+Time taken: 164.3272
+Function value obtained: 32472.2323
+Current minimum: 8993.5445
+Iteration No: 7 started. Evaluating function at random point.
+Iteration No: 7 ended. Evaluation done at random point.
+Time taken: 165.0677
+Function value obtained: 11724.8692
+Current minimum: 8993.5445
+Iteration No: 8 started. Evaluating function at random point.
+Iteration No: 8 ended. Evaluation done at random point.
+Time taken: 165.1876
+Function value obtained: 16226.6028
+Current minimum: 8993.5445
+Iteration No: 9 started. Evaluating function at random point.
+Iteration No: 9 ended. Evaluation done at random point.
+Time taken: 180.4010
+Function value obtained: 26686.0545
+Current minimum: 8993.5445
+Iteration No: 10 started. Evaluating function at random point.
+Iteration No: 10 ended. Evaluation done at random point.
+Time taken: 173.5200
+Function value obtained: 19702.3102
+Current minimum: 8993.5445
+Iteration No: 11 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 11 ended. Search finished for the next optimal point.
+Time taken: 165.9043
+Function value obtained: 38145.9259
+Current minimum: 8993.5445
+Iteration No: 12 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 12 ended. Search finished for the next optimal point.
+Time taken: 162.4890
+Function value obtained: 10249.2504
+Current minimum: 8993.5445
+Iteration No: 13 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 13 ended. Search finished for the next optimal point.
+Time taken: 163.4606
+Function value obtained: 35028.8032
+Current minimum: 8993.5445
+Iteration No: 14 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 14 ended. Search finished for the next optimal point.
+Time taken: 164.2157
+Function value obtained: 24922.5784
+Current minimum: 8993.5445
+Iteration No: 15 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 15 ended. Search finished for the next optimal point.
+Time taken: 166.9782
+Function value obtained: 41683.3160
+Current minimum: 8993.5445
+Best μ: {'thigh': 3.615399577818236, 'leg': 3.05054118604568, 'foot': 4.896286549970432} | Obj: 8993.54450232506
+→ thigh: μ=3.644, σ²=0.0412
+→ leg: μ=3.007, σ²=0.0412
+→ foot: μ=4.897, σ²=0.0412
+
+--- SimOpt step 7 ---
+Iteration No: 1 started. Evaluating function at random point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 1 ended. Evaluation done at random point.
+Time taken: 164.7275
+Function value obtained: 33368.1867
+Current minimum: 33368.1867
+Iteration No: 2 started. Evaluating function at random point.
+Iteration No: 2 ended. Evaluation done at random point.
+Time taken: 164.2044
+Function value obtained: 38046.1106
+Current minimum: 33368.1867
+Iteration No: 3 started. Evaluating function at random point.
+Iteration No: 3 ended. Evaluation done at random point.
+Time taken: 164.5953
+Function value obtained: 33779.3993
+Current minimum: 33368.1867
+Iteration No: 4 started. Evaluating function at random point.
+Iteration No: 4 ended. Evaluation done at random point.
+Time taken: 164.4922
+Function value obtained: 39191.1102
+Current minimum: 33368.1867
+Iteration No: 5 started. Evaluating function at random point.
+Iteration No: 5 ended. Evaluation done at random point.
+Time taken: 162.6940
+Function value obtained: 23193.9933
+Current minimum: 23193.9933
+Iteration No: 6 started. Evaluating function at random point.
+Iteration No: 6 ended. Evaluation done at random point.
+Time taken: 163.5364
+Function value obtained: 6258.0124
+Current minimum: 6258.0124
+Iteration No: 7 started. Evaluating function at random point.
+Iteration No: 7 ended. Evaluation done at random point.
+Time taken: 166.0388
+Function value obtained: 8456.0756
+Current minimum: 6258.0124
+Iteration No: 8 started. Evaluating function at random point.
+Iteration No: 8 ended. Evaluation done at random point.
+Time taken: 167.0635
+Function value obtained: 37487.6502
+Current minimum: 6258.0124
+Iteration No: 9 started. Evaluating function at random point.
+Iteration No: 9 ended. Evaluation done at random point.
+Time taken: 165.3515
+Function value obtained: 19972.4958
+Current minimum: 6258.0124
+Iteration No: 10 started. Evaluating function at random point.
+Iteration No: 10 ended. Evaluation done at random point.
+Time taken: 166.3923
+Function value obtained: 37866.9742
+Current minimum: 6258.0124
+Iteration No: 11 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 11 ended. Search finished for the next optimal point.
+Time taken: 164.5535
+Function value obtained: 18032.0090
+Current minimum: 6258.0124
+Iteration No: 12 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 12 ended. Search finished for the next optimal point.
+Time taken: 165.3627
+Function value obtained: 37444.5803
+Current minimum: 6258.0124
+Iteration No: 13 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 13 ended. Search finished for the next optimal point.
+Time taken: 162.8694
+Function value obtained: 10561.7968
+Current minimum: 6258.0124
+Iteration No: 14 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 14 ended. Search finished for the next optimal point.
+Time taken: 164.5103
+Function value obtained: 38548.0362
+Current minimum: 6258.0124
+Iteration No: 15 started. Searching for the next optimal point.
+/usr/local/lib/python3.8/dist-packages/stable_baselines3/common/evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Iteration No: 15 ended. Search finished for the next optimal point.
+Time taken: 163.0694
+Function value obtained: 3397.0355
+Current minimum: 3397.0355
+Best μ: {'thigh': 3.59270445036657, 'leg': 2.9838770610384153, 'foot': 4.836296094752053} | Obj: 3397.0355407777197
+→ thigh: μ=3.628, σ²=0.0288
+→ leg: μ=3.000, σ²=0.0288
+→ foot: μ=4.878, σ²=0.0288
+
+Converged φ:
+thigh: μ=3.628, σ²=0.0288
+leg: μ=3.000, σ²=0.0288
+foot: μ=4.878, σ²=0.0288
+Traceback (most recent call last):
+  File "train_simopt2.py", line 176, in <module>
+    main()
+  File "train_simopt2.py", line 165, in main
+    train_and_save(
+TypeError: train_and_save() got an unexpected keyword argument 'vecnormalize_to_load'
