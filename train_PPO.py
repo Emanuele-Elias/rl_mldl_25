@@ -109,14 +109,14 @@ def train_and_save(env_id, log_dir, model_path, use_udr=False):
         seed=SEED,
         verbose=0,
         n_steps=8192,
-        batch_size=64,
+        batch_size=32,
         gae_lambda=0.9,
-        gamma=0.99,
-        n_epochs=15,
+        gamma=0.95,
+        n_epochs=10,
         clip_range=0.2,
-        ent_coef=0.005,
-        vf_coef=0.5,
-        max_grad_norm=0.5,
+        ent_coef=0.0,
+        vf_coef=1.0,
+        max_grad_norm=1.0,
         learning_rate=lr_schedule
     )
 
