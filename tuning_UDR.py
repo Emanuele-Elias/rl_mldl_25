@@ -13,6 +13,7 @@ import json
 import os
 import random
 from datetime import datetime
+from typing import Optional
 
 import gym
 import matplotlib
@@ -117,7 +118,7 @@ def train_and_save(
     log_dir: str,
     model_path: str,
     total_timesteps: int,
-    mass_ranges: dict | None = None,
+    mass_ranges: Optional[dict] = None,
     use_udr: bool = False,
 ):
     """
