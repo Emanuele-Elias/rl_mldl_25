@@ -171,11 +171,13 @@ def train_and_save(
     # 6) Callback di valutazione
     eval_callback = EvalCallback(
         eval_vec,
-        best_model_save_path=f"{log_dir}/best_model",
-        log_path=log_dir,
-        eval_freq=6000,
+        best_model_save_path=None,   # <-- non salvare ogni "best"
+        log_path=None,               # <-- non scrivere log su disco
+        eval_freq=0,                 # <-- disattiva valutazioni automatiche
         deterministic=True,
+        verbose=0,                   # <-- niente stampa
     )
+
 
     # 7) Addestramento
     print(
