@@ -221,7 +221,7 @@ def main():
     # -------------------------------------------------------------------------
     # 1) Definizione dei range per ciascun link
     # -------------------------------------------------------------------------
-    PERCENTS = [5, 10, 15, 20, 30, 40]  # personalizza qui!
+    PERCENTS = [10, 30, 50]  # personalizza qui!
 
     THIGH_RANGES = [(1 - p / 100, 1 + p / 100) for p in PERCENTS]  # link 2
     LEG_RANGES = [(1 - p / 100, 1 + p / 100) for p in PERCENTS]  # link 3
