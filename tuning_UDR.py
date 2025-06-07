@@ -19,6 +19,7 @@ import gym
 import matplotlib
 import numpy as np
 import torch
+from env.custom_hopper import *
 from stable_baselines3 import PPO
 from stable_baselines3.common.callbacks import EvalCallback
 from stable_baselines3.common.evaluation import evaluate_policy
