@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 """
 Addestramento PPO su CustomHopper con Uniform Domain Randomization (UDR)
 e sweep automatico dei range di massa tramite prodotto cartesiano.
