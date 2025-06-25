@@ -142,6 +142,25 @@ def simopt_loop(mu_vars, discrepancy_method, optimizer_name):
     return mu_vars, root_mass
 
 
+# helper function to save rewards
+def save_rewards_csv(monitor_env: Monitor, csv_path: str) -> None:
+    rewards = monitor_env.get_episode_rewards()
+    if not rewards:
+        print("[WARN] No episodes recorded – CSV not written.")
+        return
+    cumulative, running_var = [], []
+    for r in rewards:
+        cumulative.append(r)
+        running_var.append(np.var(cumulative))
+    with open(csv_path, "w", newline="") as f:
+        wr = csv.writer(f)
+        wr.writerow(["episode", "return", "running_variance"])
+        for ep, (r, v) in enumerate(zip(rewards, running_var), 1):
+            wr.writerow([ep, r, v])
+    print(f"Saved reward log → {csv_path}")
+
+
+
 # Final training phase using optimized mass parameters
 def final_training(mu_vars, root_mass, total_steps, optimizer_name):
     print("Starting final training")
@@ -192,6 +211,8 @@ def final_training(mu_vars, root_mass, total_steps, optimizer_name):
     df = pd.DataFrame(log,
                       columns=["Environment", "Timesteps", "Mean Reward"])
     df.to_csv(d_dir / f"{tag}.csv", index=False)
+    # per-episode returns
+    save_rewards_csv(env_train, str(d_dir / f"{tag}_returns.csv"))
     
 def main():
     parser = argparse.ArgumentParser()
