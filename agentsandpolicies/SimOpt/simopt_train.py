@@ -13,6 +13,7 @@ from stable_baselines3.common.evaluation import evaluate_policy
 from scipy.ndimage import gaussian_filter1d
 from scipy.stats import wasserstein_distance
 from sklearn.metrics.pairwise import rbf_kernel
+import csv
 
 # Create a gym environment
 def make_env(env_id: str, seed: int):
