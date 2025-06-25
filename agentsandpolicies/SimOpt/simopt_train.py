@@ -143,7 +143,7 @@ def simopt_loop(mu_vars, discrepancy_method, optimizer_name):
 
 
 # Final training phase using optimized mass parameters
-def final_training(mu_vars, root_mass, total_steps):
+def final_training(mu_vars, root_mass, total_steps, optimizer_name):
     print("Starting final training")
     # Sample final body masses from optimized distribution
     masses3 = [np.random.normal(mu[0], mu[1]) for mu in mu_vars]
@@ -151,7 +151,7 @@ def final_training(mu_vars, root_mass, total_steps):
 
     # Set up training environment with final parameters
     env_train = make_env("CustomHopper-source-v0", SEED)
-    env_train.set_parameters(masses3)
+    env_train.set_parameters(masses4)
     env_train = Monitor(env_train)
 
     # Initialize PPO model
@@ -178,7 +178,7 @@ def final_training(mu_vars, root_mass, total_steps):
     # Prepare logging
     env_type = ("source" if "source" in env_train.unwrapped.spec.id.lower()
                          else "target")
-    tag = f"ppo_tuned_{env_type}_seed_{SEED}_simopt_{args.discrepancy}"
+    tag = f"ppo_tuned_{env_type}_seed_{SEED}_simopt_{args.discrepancy}_{optimizer_name}"
     # repos
     base_dir = Path(__file__).resolve().parents[1]   
     w_dir   = base_dir / "models_weights"
@@ -208,7 +208,7 @@ def main():
     torch.manual_seed(SEED)
     mu_init = [[3.92699082, 0.5], [2.71433605, 0.5], [5.0893801, 0.5]]
     mu_final, root_mass = simopt_loop(mu_init, args.discrepancy, args.optimizer)
-    final_training(mu_final,root_mass, args.final_steps)
+    final_training(mu_final,root_mass, args.final_steps, args.optimizer)
 
 if __name__ == '__main__':
     main()
