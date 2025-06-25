@@ -22,6 +22,10 @@ def parse_args():
                         help="Run evaluation/testing of Bayesian SimOpt models")
     parser.add_argument("--simopt_pso",   action="store_true",
                         help="Run PSO-based SimOpt training and evaluation")
+    parser.add_argument("--simopt_optimizer",
+                        choices=["cma", "pso", "de"],
+                        default="cma",
+                        help="Nevergrad optimiser to use inside SimOpt")
 
     # Common options
     parser.add_argument("--agent",
@@ -179,7 +183,8 @@ def main():
             "--discrepancy",  args.discrepancy,
             "--final_steps",  str(args.final_steps),
             "--seed",         str(args.seed),
-            "--device",       args.device
+            "--device",       args.device,
+            "--optimizer",    args.simopt_optimizer
         ]
         print("[subprocess]", " ".join(cmd))
         subprocess.call(cmd)
