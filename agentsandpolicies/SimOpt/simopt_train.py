@@ -103,10 +103,10 @@ def simopt_loop(mu_vars, discrepancy_method, optimizer_name):
         for _ in range(optimizer.budget):
             x = optimizer.ask()
             masses3 = [float(x.value[f"x{i+1}"]) for i in range(3)]
-
+            masses4  = np.concatenate([[root_mass], masses3])
             # Train PPO on sim env with current masses
             env_sim = make_env("CustomHopper-source-v0", SEED)
-            env_sim.set_parameters(masses3)
+            env_sim.set_parameters(masses4)
 
             model = PPO("MlpPolicy", env_sim,
                         learning_rate=3e-4, gamma=0.99,
@@ -115,7 +115,7 @@ def simopt_loop(mu_vars, discrepancy_method, optimizer_name):
 
             # Evaluate discrepancy between sim and real environments
             env_real = make_env("CustomHopper-target-v0", SEED)
-            env_real.set_parameters(masses3)
+            env_real.set_parameters(masses4)
 
             real_obs = rollout_episodes(env_real, model)
             sim_obs  = rollout_episodes(env_sim, model)
@@ -151,7 +151,7 @@ def final_training(mu_vars, root_mass, total_steps, optimizer_name):
 
     # Set up training environment with final parameters
     env_train = make_env("CustomHopper-source-v0", SEED)
-    env_train.set_parameters(masses4)
+    env_train.set_parameters(masses4)   
     env_train = Monitor(env_train)
 
     # Initialize PPO model
@@ -164,6 +164,7 @@ def final_training(mu_vars, root_mass, total_steps, optimizer_name):
 
     # Evaluate final policy 
     env_eval  = Monitor(make_env("CustomHopper-target-v0", SEED))
+    env_eval.set_parameters(masses4)
     avg_eval, _ = evaluate_policy(model, env_eval, n_eval_episodes=50)
     train_rewards = env_train.get_episode_rewards()
     mean_training = np.mean(train_rewards[-10:]) if len(train_rewards) >= 10 else np.mean(train_rewards)
