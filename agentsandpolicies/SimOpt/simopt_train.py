@@ -181,7 +181,7 @@ def final_training(mu_vars, root_mass, total_steps, optimizer_name):
                          else "target")
     tag = f"ppo_tuned_{env_type}_seed_{SEED}_simopt_{args.discrepancy}_{optimizer_name}"
     # repos
-    base_dir = Path(__file__).resolve().parents[1]   
+    base_dir = Path(__file__).resolve().parents[2]   
     w_dir   = base_dir / "models_weights"
     d_dir   = base_dir / "models_data"
     w_dir.mkdir(exist_ok=True, parents=True)
