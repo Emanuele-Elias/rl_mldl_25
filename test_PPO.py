@@ -7,6 +7,7 @@ from typing import List, Dict, Tuple, Union    # ← aggiunto Union
 import gym
 import numpy as np
 from stable_baselines3 import PPO
+from env.custom_hopper import *
 
 
 # --- project paths -----------------------------------------------------------
