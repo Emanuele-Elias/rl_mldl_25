@@ -74,7 +74,7 @@ main.py                ← pipeline launcher (entry point)
 
 | Goal                                                  | Command                                                                    			   |
 | ----------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| **Full transfer matrix** S→S / S→T / T→T (UDR off/on) | `!python3.8 main.py --run_testing --agent PPO --all-testing --episodes 100 --device cpu` |
+| **Full transfer matrix** S→S / S→T / T→T (UDR off/on and various SimOpt) | `!python3.8 main.py --run_testing --agent PPO --all-testing --episodes 100 --device cpu` |
 
 
 *Use `--seed` and `--device` to override defaults if needed.*
@@ -95,8 +95,8 @@ main.py                ← pipeline launcher (entry point)
   <td align="center" valign="middle" nowrap>
     01TXFSM  |  A.Y. 2024/2025  |  prof.&nbsp;B.&nbsp;Caputo
   </td>
-  <td align="right" valign="middle" width="140">
-    <img src="./logo/poli.png" alt="Politecnico di Torino" width="180">
+  <td align="right" valign="middle" width="1600">
+    <img src="./logo/poli.png" alt="Politecnico di Torino" width="160">
   </td>
 </tr>
 </table>
