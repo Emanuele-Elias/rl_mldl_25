@@ -40,11 +40,7 @@ def make_env(env_id: str, seed: int, use_udr: bool) -> Monitor:
         body 3: [0.90, 1.10]
         body 4: [0.50, 1.50]
         """
-        ranges = {
-            2: (0.50, 1.2),   # thigh  2–4.5 kg
-            3: (1.10, 1.70),   # leg    3–4.5 kg
-            4: (0.3, 1.8)    # foot   1.5–9 kg
-        }
+        ranges = {2: (0.9, 1.1), 3: (0.9, 1.1), 4: (0.7, 1.3)}
         env = HopperMassRandomWrapper(env, ranges)
         
 
