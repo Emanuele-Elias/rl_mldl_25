@@ -95,7 +95,7 @@ main.py                ← pipeline launcher (entry point)
   <td align="center" valign="middle" nowrap>
     01TXFSM  |  A.Y. 2024/2025  |  prof.&nbsp;B.&nbsp;Caputo
   </td>
-  <td align="right" valign="middle" width="1600">
+  <td align="right" valign="middle" width="160">
     <img src="./logo/poli.png" alt="Politecnico di Torino" width="160">
   </td>
 </tr>
