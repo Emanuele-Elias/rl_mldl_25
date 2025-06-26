@@ -27,7 +27,7 @@ Everything is orchestrated by a single launcher, `main.py`, so reproducing the p
 
 ## Run the code
 
-We suggest to use `colab_starting_code.ipynb/` (contained in this repo) on Google Colab. 
+We suggest to use `colab_starting_code.ipynb` (contained in this repo) on Google Colab. 
 
 ---
 
