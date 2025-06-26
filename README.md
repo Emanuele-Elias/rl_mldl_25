@@ -79,13 +79,17 @@ main.py                ← pipeline launcher (entry point)
 
 ## Authors
 
-## Authors
+<table>
+  <tr>
+    <td align="left" valign="middle">
+      - **Emanuele Francesco Elias** — s344489  
+      - **Dalia Lemmi** — s344440
+    </td>
+    <td align="right" valign="middle">
+      <img src="./logo/poli.png" alt="Politecnico di Milano" width="140"/>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="./logo/poli.png" alt="Politecnico di Milano" width="140"/>
-</p>
-
-* **Emanuele Francesco Elias** — s344489
-* **Dalia Lemmi** — s344440
 
 
