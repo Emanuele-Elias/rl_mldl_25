@@ -22,7 +22,7 @@ def evaluate_once(model_path: Path,
                   episodes: int,
                   seed: int,
                   device: str,
-                  render: bool) -> tuple[float, float]:
+                  render: bool):
     """Run one checkpoint for a fixed number of episodes and return mean, std."""
     env = gym.make(env_id)
     env.seed(seed)
@@ -50,7 +50,7 @@ def run_eval(seed: int,
              episodes: int,
              device: str,
              render: bool,
-             only_udr: bool) -> None:
+             only_udr: bool):
     """
     Evaluate checkpoints SOURCE → {SOURCE,TARGET}
     Evaluate checkpoints TARGET → TARGET
@@ -61,7 +61,7 @@ def run_eval(seed: int,
     def _eval_ckpt(ckpt: Path,
                    variant: str,
                    train_env: str,
-                   targets: list[str]) -> None:
+                   targets: list[str]):
         for target in targets:
             env_id = SOURCE_ID if target == "source" else TARGET_ID
             mean_r, std_r = evaluate_once(
