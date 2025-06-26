@@ -84,17 +84,21 @@ main.py                ← pipeline launcher (entry point)
 
 ## Authors
 
-<table cellpadding="0" cellspacing="200">
+<table style="width:100%; border-collapse:collapse;">
   <tr>
-    <td align="left" valign="middle">
+    <td style="width:100%; text-align:left; vertical-align:middle;">
       – Emanuele Francesco Elias s344489<br>
       – Dalia Lemmi s344440
     </td>
-    <td align="right" valign="middle">
-      <img src="./logo/poli.png" alt="Politecnico di Torino" width="140"/>
+
+    <td style="text-align:right; vertical-align:middle;">
+      <img src="./logo/poli.png"
+           alt="Politecnico di Torino"
+           width="140">
     </td>
   </tr>
 </table>
+
 
 
 
