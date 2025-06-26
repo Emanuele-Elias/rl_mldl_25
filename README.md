@@ -89,8 +89,8 @@ main.py                ← pipeline launcher (entry point)
 <table width="100%" cellpadding="0" cellspacing="0">
 <tr>
   <td align="left" valign="middle">
-    E. F. Elias <br> s344489 <br> - <br>
-    D. Lemmi <br> s344440
+    E. F. Elias s344489 <br> 
+    D. Lemmi s344440
   </td>
   <td align="center" valign="middle" nowrap>
     Machine&nbsp;Learning&nbsp;and&nbsp;Deep&nbsp;Learning&nbsp;  |  prof.&nbsp;B.&nbsp;Caputo
