@@ -84,17 +84,25 @@ main.py                ← pipeline launcher (entry point)
 
 ## Authors
 
-<table cellpadding="200" cellspacing="200">
+
+<table width="100%" cellpadding="0" cellspacing="0">
   <tr>
     <td align="left" valign="middle">
       – Emanuele Francesco Elias s344489<br>
       – Dalia Lemmi s344440
     </td>
-    <td align="right" valign="middle">
-      <img src="./logo/poli.png" alt="Politecnico di Torino" width="140"/>
+
+    <td align="center" valign="middle" nowrap>
+      Class: Machine&nbsp;Learning&nbsp;and&nbsp;Deep&nbsp;Learning&nbsp;– prof.&nbsp;B.&nbsp;Caputo
+    </td>
+
+    <!-- logo a destra -->
+    <td align="right" valign="middle" width="140">
+      <img src="./logo/poli.png" alt="Politecnico di Torino" width="140">
     </td>
   </tr>
 </table>
+
 
 
 
