@@ -82,8 +82,13 @@ main.py                ← pipeline launcher (entry point)
 
 ## Authors
 
-\| ![Politecnico Logo](logo/poli.png) | **Emanuele Francesco Elias** — s344489
-**Dalia Lemmi** — s344440 |
-\|:--:|---|
+## Authors
+
+<p align="center">
+  <img src="./logo/poli.png" alt="Politecnico di Milano" width="140"/>
+</p>
+
+* **Emanuele Francesco Elias** — s344489
+* **Dalia Lemmi** — s344440
 
 
