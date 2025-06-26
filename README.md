@@ -1,55 +1,91 @@
-# Project on Reinforcement Learning (Course project MLDL 2025 - POLITO)
-### Teaching assistants: Andrea Protopapa and Davide Buoso
+# RL‑MLDL‑25
 
-Starting code for "Project 4: Reinforcement Learning" course project of MLDL 2025 at Polytechnic of Turin. Official assignment at [Google Doc](https://docs.google.com/document/d/16Fy0gUj-HKxweQaJf97b_lTeqM_9axJa4_SdqpP_FaE/edit?usp=sharing).
+**Reinforcement Learning with Uniform & Adaptive Domain Randomization on the MuJoCo Hopper**
 
+A compact research framework to **train, evaluate and analyse** policy‑gradient agents on the *Hopper* task, study the impact of **Uniform Domain Randomization (UDR)** and compare several flavours of **SimOpt adaptive randomization** (CMA‑ES, PSO, DE).
 
-## Getting started
+Everything is orchestrated by a single launcher, `main.py`, so reproducing the paper’s results is a one‑liner.
 
-Before starting to implement your own code, make sure to:
-1. read and study the material provided (see Section 1 in the assignment)
-2. read the documentation of the main packages you will be using ([mujoco-py](https://github.com/openai/mujoco-py), [Gym](https://github.com/openai/gym), [stable-baselines3](https://stable-baselines3.readthedocs.io/en/master/index.html))
-3. play around with the code in the template to familiarize with all the tools. Especially with the `test_random_policy.py` script.
+---
 
+## Features
 
-### 1. Local on Linux (recommended)
+* PPO baseline, REINFORCE variants and Actor‑Critic implementations
+* Plug‑and‑play UDR on thigh/leg/foot masses
+* Hyper‑parameter sweeps for PPO and UDR bounds
+* Adaptive SimOpt training with three evolutionary optimisers and three trajectory‑discrepancy metrics
+* End‑to‑end testing pipeline that builds the full source→source / source→target / target→target transfer matrix
+* Automatic logging of checkpoints (`models_weights/`) and per‑episode returns (`models_data/`)
+* Ready‑made Jupyter notebook for plotting and statistical analysis
 
-if you have a Linux system, you can work on the course project directly on your local machine. By doing so, you will also be able to render the Mujoco Hopper environment and visualize what is happening. This code has been tested on Linux with python 3.7.
+---
 
-**Installation**
-- (recommended) create a new conda environment, e.g. `conda create --name mldl pip=22 python=3.8 setuptools=65.5.0 wheel=0.38`
-- Run `pip install -r requirements.txt`
-- Install MuJoCo 2.1 and the Python Mujoco interface:
-	- follow instructions here: https://github.com/openai/mujoco-py
-	- see Troubleshooting section below for solving common installation issues.
+## Quick start
 
-Check your installation by launching `python test_random_policy.py`.
+```bash
+# clone & enter
+git clone https://github.com/Emanuele-Elias/rl_mldl_25.git
+cd rl_mldl_25
 
+# create env (example with conda)
+conda env create -f environment.yml
+conda activate rl_mldl_25
 
-### 2. Local on Windows
-As the latest version of `mujoco-py` is not compatible for Windows explicitly, you may:
-- Try installing WSL2 (requires fewer resources) or a full Virtual Machine to run Linux on Windows. Then you can follow the instructions above for Linux.
-- (not recommended) Try downloading a [previous version](https://github.com/openai/mujoco-py/blob/9ea9bb000d6b8551b99f9aa440862e0c7f7b4191/) of `mujoco-py`.
-- (not recommended) Stick to the Google Colab template (see below), which runs on the browser regardless of the operating system. This option, however, will not allow you to render the environment in an interactive window for debugging purposes.
+# 1) TRAIN – PPO on source domain with UDR, 2 M steps on GPU
+python main.py --run_training --agent PPO --use-udr \
+               --env source --episodes 2000000 --device cuda
 
+# 2) TEST  – run the full transfer matrix (S→S, S→T, T→T)
+python main.py --run_testing --agent PPO --all-testing
 
-### 3. Remotely on Google Colab
+# 3) HYPER‑PARAMETER SWEEPS (optional)
+python main.py --ppo_tuning          # grid search for PPO
+python main.py --udr_tuning          # grid search for UDR bounds
 
-Alternatively, you may also complete the project on [Google Colab](https://colab.research.google.com/):
+# 4) ADAPTIVE DOMAIN RANDOMIZATION (SimOpt)
+python main.py --simopt_train --simopt_optimizer cma    # CMA‑ES
+python main.py --simopt_test                            # evaluate the optimised model
+```
 
-- Download the files contained in the `colab_template` folder in this repo.
-- Load the `.ipynb` files on [https://colab.research.google.com/](colab) and follow the instructions on each script to run the experiments.
+All CLI flags are self‑documented with `-h`.
 
-NOTE 1: rendering is currently **not** officially supported on Colab, making it hard to see the simulator in action. We recommend that each group manages to play around with the visual interface of the simulator at least once (e.g. using a Linux system), to best understand what is going on with the underlying Hopper environment.
+---
 
-NOTE 2: you need to stay connected to the Google Colab interface at all times for your python scripts to keep training.
+## Project layout
 
+```
+agentsandpolicies/     ← algorithms: PPO, REINFORCE*, Actor‑Critic, SimOpt loops
+env/                   ← CustomHopper, MuJoCo XML assets & wrappers
+tuning/                ← grid‑search scripts for PPO and UDR
+models_weights/        ← saved checkpoints (auto‑created)
+models_data/           ← CSV logs (auto‑created)
+notebooks/analysis.ipynb
+main.py                ← pipeline launcher (entry point)
+```
 
+* `models_weights/` contains every trained policy as a `.zip` file.
+* `models_data/` stores the episode‑return CSVs that the notebook uses for plotting.
 
-## Troubleshooting
-- General installation guide and troubleshooting: [Here](https://docs.google.com/document/d/1j5_FzsOpGflBYgNwW9ez5dh3BGcLUj4a/edit?usp=sharing&ouid=118210130204683507526&rtpof=true&sd=true)
-- If having trouble while installing mujoco-py, see [#627](https://github.com/openai/mujoco-py/issues/627) to install all dependencies through conda.
-- If installation goes wrong due to gym==0.21 as `error in gym setup command: 'extras_require'`, see https://github.com/openai/gym/issues/3176. There is a problem with the version of setuptools.
-- if you get a `cannot find -lGL` error when importing mujoco_py for the first time, then have a look at my solution in [#763](https://github.com/openai/mujoco-py/issues/763#issuecomment-1519090452)
-- if you get a `fatal error: GL/osmesa.h: No such file or directory` error, make sure you export the CPATH variable as mentioned in mujoco-py[#627](https://github.com/openai/mujoco-py/issues/627)
-- if you get a `Cannot assign type 'void (const char *) except * nogil' to 'void`, then run `pip install "cython<3"` (see issue [#773](https://github.com/openai/mujoco-py/issues/773))
+---
+
+## Typical recipes
+
+| Goal                                        | Command                                                                       |
+| ------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Baseline PPO (no UDR) on *target***       | `python main.py --run_training --agent PPO --env target --episodes 2000000`   |
+| **Evaluate a PPO+UDR model with rendering** | `python main.py --run_testing --agent PPO --use-udr --render --episodes 5000` |
+| **Run SimOpt with PSO + Wasserstein**       | `python main.py --simopt_train --simopt_optimizer pso --discrepancy score3`   |
+| **Benchmark SimOpt models**                 | `python main.py --simopt_test --episodes 100000`                              |
+
+---
+
+## Authors
+
+*Emanuele Francesco Elias* — s344489
+*Dalia Lemmi* — s344440
+
+---
+
+## License
+
+This project is released for academic purposes only. See `LICENSE` for details.
