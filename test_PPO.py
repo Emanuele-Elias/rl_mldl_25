@@ -111,6 +111,13 @@ def run_eval(seed: int,
     if ppo_ckpt.exists() and not only_udr:
         _eval_ckpt(ppo_ckpt, "Plain PPO", train_env, target_list_tgt)
 
+    for udr_flag in (True, False):
+        if only_udr and not udr_flag:
+            continue
+        ckpt = WEIGHTS_DIR / f"ppo_tuned_{train_env}_seed_{seed}_UDR_{udr_flag}.zip"
+        if ckpt.exists():
+            _eval_ckpt(ckpt, f"UDR {udr_flag}", train_env, target_list_tgt)
+
     # -----------------------------------------------------------
     # 3) Save CSV
     # -----------------------------------------------------------
