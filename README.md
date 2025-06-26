@@ -93,7 +93,7 @@ main.py                ← pipeline launcher (entry point)
     D. Lemmi <br> s344440
   </td>
   <td align="center" valign="middle" nowrap>
-    Machine&nbsp;Learning&nbsp;and&nbsp;Deep&nbsp;Learning&nbsp; <br> prof.&nbsp;B.&nbsp;Caputo
+    Machine&nbsp;Learning&nbsp;and&nbsp;Deep&nbsp;Learning&nbsp;  |  prof.&nbsp;B.&nbsp;Caputo
   </td>
   <td align="right" valign="middle" width="140">
     <img src="./logo/poli.png" alt="Politecnico di Torino" width="140">
