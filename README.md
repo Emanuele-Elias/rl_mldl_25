@@ -1,12 +1,8 @@
 # RL‑MLDL‑25
 
-<table cellpadding="0" cellspacing="0">
-  <tr>
-    <td align="center" valign="middle">
-      <img src="./logo/hopper.gif" alt="hopper" width="280"/>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="./logo/hopper.gif" alt="hopper" width="280"/>
+</p>
 
 
 **Reinforcement Learning with Domain Randomization and SimOpt: a comparison between optimizers and discrepancy functions**
