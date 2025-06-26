@@ -3,6 +3,8 @@ import argparse
 import csv
 from pathlib import Path
 from typing import List, Dict
+from __future__ import annotations
+
 
 import gym
 import numpy as np
