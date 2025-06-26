@@ -84,7 +84,7 @@ main.py                ← pipeline launcher (entry point)
 
 ## Authors
 
-<table cellpadding="0" cellspacing="200">
+<table cellpadding="200" cellspacing="200">
   <tr>
     <td align="left" valign="middle">
       – Emanuele Francesco Elias s344489<br>
