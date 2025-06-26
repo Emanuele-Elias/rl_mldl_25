@@ -1,5 +1,9 @@
 # RL‑MLDL‑25
 
+<td align="middle">
+      <img src="./logo/hopper.gif" alt="hopper" width="280"/>
+</td>
+
 **Reinforcement Learning with Domain Randomization and SimOpt: a comparison between optimizers and discrepancy functions**
 
 A compact research framework to **train, evaluate and analyse** policy‑gradient agents on the (custom) *Hopper* task, study the impact of **Uniform Domain Randomization (UDR)** and compare several flavours of **SimOpt adaptive randomization** (CMA‑ES, PSO, DE) with various metrics.
@@ -86,7 +90,7 @@ main.py                ← pipeline launcher (entry point)
       – Dalia Lemmi s344440
     </td>
     <td align="right" valign="middle">
-      <img src="./logo/poli-framed.png" alt="Politecnico di Torino" width="140"/>
+      <img src="./logo/poli.png" alt="Politecnico di Torino" width="140"/>
     </td>
   </tr>
 </table>
