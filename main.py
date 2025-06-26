@@ -145,26 +145,20 @@ def main():
             subprocess.call(cmd)
 
         elif args.all_testing and args.agent == "PPO":
-            module = "agentsandpolicies.PPOandUDR.test_PPO"
-            for train_env in ("source","target"):
-                # per train_env="target" vogliamo solo target→target
-                test_envs = ["target"] if train_env=="target" else ["source","target"]
-                for use_udr in (False,):
-                    for test_env in test_envs:
-                        cmd = [
-                            sys.executable, "-m", module,
-                            "--env",       train_env,
-                            "--test-env",  test_env,
-                            "--seed",      str(args.seed),
-                            "--episodes",  str(args.episodes),
-                            "--device",    args.device,
-                        ]
-                        if args.render:
-                            cmd.append("--render")
-                        if use_udr:
-                            cmd.append("--use-udr")
-                        print("[subprocess]", " ".join(cmd))
-                        subprocess.call(cmd)
+            module = "test_PPO"                   
+            cmd = [
+                sys.executable, "-m", module,
+                "--seed",     str(args.seed),
+                "--episodes", str(args.episodes),
+                "--device",   args.device,
+            ]
+            if args.render:
+                cmd.append("--render")
+            if args.use_udr:
+                cmd.append("--use-udr")
+
+            print("[subprocess]", " ".join(cmd))
+            subprocess.call(cmd)
             print(">>> All PPO tests completed.\n")
             sys.exit(0)
 

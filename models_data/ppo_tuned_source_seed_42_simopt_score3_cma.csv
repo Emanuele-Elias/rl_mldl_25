@@ -1,0 +1,3 @@
+Environment,Timesteps,Mean Reward
+Train (source),2000000,1547.4644505022563
+Eval (target),2000000,1755.18928242
