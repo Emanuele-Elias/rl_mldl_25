@@ -86,7 +86,7 @@ main.py                ← pipeline launcher (entry point)
 
 <table cellpadding="0" cellspacing="0">
   <tr>
-    <td align="left" valign="middle">
+    <td align="left" valign="middle" width="100%">
       – Emanuele Francesco Elias s344489<br>
       – Dalia Lemmi s344440
     </td>
