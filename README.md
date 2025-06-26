@@ -79,17 +79,37 @@ main.py                ← pipeline launcher (entry point)
 
 ## Authors
 
-<table>
+<style>
+  table.custom {
+    border-collapse: collapse;  
+    width: 100%;
+  }
+  table.custom td {
+    border: none;
+  }
+
+
+  .logo-cell {
+    background-color: #fff;       
+    border-radius: 20px;          
+    padding: 8px;                
+  
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+</style>
+
+<table class="custom">
   <tr>
     <td align="left" valign="middle">
-      - **Emanuele Francesco Elias** — s344489  
-      - **Dalia Lemmi** — s344440
+      – Emanuele Francesco Elias s344489<br/>
+      – Dalia Lemmi s344440
     </td>
-    <td align="right" valign="middle">
-      <img src="./logo/poli.png" alt="Politecnico di Milano" width="140"/>
+    <td class="logo-cell" align="right" valign="middle">
+      <img src="./logo/poli.png" alt="Politecnico di Torino" width="140"/>
     </td>
   </tr>
 </table>
+
 
 
 
