@@ -10,7 +10,7 @@ from stable_baselines3 import PPO
 
 
 # --- project paths -----------------------------------------------------------
-ROOT        = Path(__file__).resolve().parents[2]
+ROOT        = Path(__file__).resolve().parent
 WEIGHTS_DIR = ROOT / "models_weights"
 DATA_DIR    = ROOT / "models_data"
 SOURCE_ID   = "CustomHopper-source-v0"
