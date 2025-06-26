@@ -29,6 +29,8 @@ class HopperMassRandomWrapper(gym.Wrapper):
 def make_env(env_id: str, seed: int, use_udr: bool) -> Monitor:
     """Create the environment, wrap with Monitor and (optionally) with UDR."""
     env = gym.make(env_id)
+    print("Body names :", env.sim.model.body_names)
+    print("Body masses:", env.sim.model.body_mass)
 
     if use_udr:
         """
@@ -40,6 +42,7 @@ def make_env(env_id: str, seed: int, use_udr: bool) -> Monitor:
         """
         ranges = {2: (0.9, 1.1), 3: (0.9, 1.1), 4: (0.7, 1.3)}
         env = HopperMassRandomWrapper(env, ranges)
+        
 
     env.seed(seed)
     env.action_space.seed(seed)
