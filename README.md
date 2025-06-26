@@ -84,9 +84,9 @@ main.py                ← pipeline launcher (entry point)
 
 ## Authors
 
-<table width="100%" cellpadding="0" cellspacing="0">
+<table cellpadding="0" cellspacing="0">
   <tr>
-    <td align="left" valign="middle" width="100%">
+    <td align="left" valign="middle">
       – Emanuele Francesco Elias s344489<br>
       – Dalia Lemmi s344440
     </td>
@@ -95,7 +95,6 @@ main.py                ← pipeline launcher (entry point)
     </td>
   </tr>
 </table>
-
 
 
 
